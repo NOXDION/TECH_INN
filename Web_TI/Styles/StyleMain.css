@@ -4,7 +4,9 @@
     --green : #5c2a91aa;
     --green-blc : #062321dd;
     --shadow : 0 5px 10px 5px rgba(0, 0, 0, .3);
-    --navColor : linear-gradient(to right, rgba(47, 178, 112, 0.6)5%, rgba(6, 35, 23, 0.9));
+    /*--navColor : linear-gradient(to right, rgb(57, 169, 0)5%, rgb(15, 46, 0)); este es color sena*/
+    --navColor: linear-gradient(to right, rgba(19, 148, 83, 0.6)5%, rgba(6, 35, 23, 0.9));
+    /*--navColor : linear-gradient(to right, rgba(47, 178, 112, 0.6)5%, rgba(6, 35, 23, 0.9));*/
     /*--navColor : linear-gradient(to right, rgba(178, 47, 147, .6)5%, rgba(35, 6, 34, .9));*/
   }
   
