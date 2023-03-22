@@ -17,7 +17,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #395144;
+    background-color: lightgray;
 }
 
 header {
@@ -30,7 +30,7 @@ header {
 }*/
 
 nav {
-    position: absolute;
+    /* position: absolute; */
     background: var(--navColor);
     box-shadow: var(--shadow);
     height: 80px;
@@ -96,52 +96,91 @@ a:hover {
     display: none;
 }
 
-body header .titulo {
-    padding: 1%;
-    font-size: medium;
-    font-family: cursive;
-    background-color: #d8fac3;
+.div_h2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-body header .titulo2 {
-    padding: 1%;
-    font-size: medium;
-    font-family: cursive;
-    background-color: #d8fac3;
+.div_search {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-body header .titulo3 {
-    padding: 1%;
-    font-size: medium;
-    font-family: cursive;
-    background-color: #d8fac3;
+.div_search p {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
 }
 
-body header .titulo4 {
-    padding: 1%;
-    font-size: medium;
-    font-family: cursive;
-    background-color: #d8fac3;
+.search {
+    width: 500px;
+    height: 30px;
 }
 
-body header .enun {
-    width: 100%;
-    padding: 40px;
-    margin-left: 2px;
+.date1 {
+    width: 110px;
+    height: 30px;
 }
 
-body header .cab_izq {
-    width: 9%;
-    padding: 0%;
-    height: 800px;
-    float: left;
-    background-color: #ffffff;
+.date2 {
+    width: 110px;
+    height: 30px;
 }
 
-body header .cab_der {
-    width: 9%;
-    padding: 0%;
-    height: 800px;
-    float: right;
-    background-color: #ffffff;
+.boton {
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: #395144;
+    font-family: verdana;
+    margin-left: 20px;
+}
+
+section div h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.div_crud {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.div_crud h4 {
+    color: white;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.search2 {
+    width: 200px;
+    height: 30px;
+}
+
+.destinos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.destinos img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5%;
+    object-fit: cover;
 }
