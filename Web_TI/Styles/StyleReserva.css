@@ -20,11 +20,9 @@ body {
     background-color: #2D2727;
 }
 
-
 header {
     height: 80px;
 }
-
 
 /*.home {
     background-color: #395144;
@@ -157,6 +155,13 @@ section div h2 {
 .menu {
     font-size: 15px;
     width: 50px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.menu2 {
+    font-size: 15px;
+    width: 100px;
     height: 40px;
     border-radius: 5px;
 }
