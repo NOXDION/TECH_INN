@@ -23,7 +23,7 @@ body {
 }
 
 nav {
-    position: absolute;
+    /*position: absolute;*/
     background: var(--navColor);
     box-shadow: var(--shadow);
     height: 80px;
