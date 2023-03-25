@@ -7,7 +7,9 @@
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #2D2727;
+    background-image: url(../Images/bosque_en_la_nieve.jpg);
+    background-size: 150%;
+    animation: movimiento 20s infinite linear alternate;
 }
 
 header {
@@ -28,7 +30,7 @@ header h1 {
     background-color: #395144;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 50px;
     border-radius: 4px;
     color: white;
     box-shadow: 7px 13px 37px #000;
@@ -65,19 +67,10 @@ header h1 {
     color: #DF2E38;
 }
 
-/* header {
-    height: 200px;
+@keyframes movimiento{
+    from{
+        background-position: left;
+    }to{
+        background-position: right;
+    }
 }
-
-.div_consulta {
-    margin-left: 700px;
-    margin-right: 700px;
-    display: grid;
-    place-items: center;
-    border: 3px solid white;
-}
-
-.div_consulta p {
-    color: white;
-    font-size: 30px;
-} */
