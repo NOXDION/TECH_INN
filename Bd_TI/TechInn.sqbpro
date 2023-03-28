@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="" readonly="0" foreign_keys="" case_sensitive_like="" temp_store="" wal_autocheckpoint="" synchronous=""/><attached/><window><main_tabs open="structure browser pragmas query" current="3"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1890"/><column_width id="4" width="0"/></tab_structure><tab_browse><current_table name="0,0:"/><default_encoding codec=""/><browse_table_settings><table schema="main" name="tbCostoTotal" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="59"/><column index="2" value="51"/><column index="3" value="44"/><column index="4" value="46"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbHabitaciones" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="46"/><column index="2" value="76"/><column index="3" value="300"/><column index="4" value="69"/><column index="5" value="72"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbProductos" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="44"/><column index="2" value="192"/><column index="3" value="67"/><column index="4" value="69"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbReserva" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="43"/><column index="2" value="119"/><column index="3" value="79"/><column index="4" value="82"/><column index="5" value="46"/><column index="6" value="104"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbServicios" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="51"/><column index="2" value="300"/><column index="3" value="74"/><column index="4" value="69"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbTipoHabitacion" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="72"/><column index="2" value="132"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbTipoProducto" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="69"/><column index="2" value="118"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbTipoServicio" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="69"/><column index="2" value="118"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbTipoUsuario" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="70"/><column index="2" value="87"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table><table schema="main" name="tbUsuarios" show_row_id="0" encoding="" plot_x_axis="" unlock_view_pk="_rowid_"><sort/><column_widths><column index="1" value="104"/><column index="2" value="80"/><column index="3" value="82"/><column index="4" value="172"/><column index="5" value="86"/><column index="6" value="77"/><column index="7" value="70"/></column_widths><filter_values/><conditional_formats/><row_id_formats/><display_formats/><hidden_columns/><plot_y_axes/><global_filter/></table></browse_table_settings></tab_browse><tab_sql><sql name="Datos">INSERT INTO tbTipoUsuario VALUES (1, 'Cliente');
+INSERT INTO tbTipoUsuario VALUES (2, 'Administrador');
+INSERT INTO tbTipoUsuario VALUES( 3, 'Recepcionista');
+INSERT INTO tbTipoUsuario VALUES (4, 'Mesero');
+INSERT INTO tbTipoUsuario VALUES (5, 'Cocinero');
+
+INSERT INTO tbUsuarios VALUES (23745600, 'Duvan', 'Tarquino', 'dubata@email.com', 3229564211, 'Masculino', 2);
+INSERT INTO tbUsuarios VALUES (98765432, 'Juan', 'Gonzales', 'juan.gonzalez@email.com', 3034946700, 'Masculino', 1);
+INSERT INTO tbUsuarios VALUES (25894702, 'Pablo', 'Martinez', 'pabloco@email.com', 3057995400, 'Masculino', 1);
+INSERT INTO tbUsuarios VALUES (45678912, 'Laura', 'Ramirez', 'laura.ramirez@email.com', 3058356700, 'Femenino', 1);
+INSERT INTO tbUsuarios VALUES (78912345, 'Pedro', 'Fernandez', 'pedro.fernandez@email.com', 3053464670, 'Masculino', 1);
+INSERT INTO tbUsuarios VALUES (22790521, 'Jeshua', 'Espitia', 'jsh@email.com', 3057668900, 'Masculino', 1);
+INSERT INTO tbUsuarios VALUES (12660937, 'Mariana', 'Deaza', 'marianaaz@email.com', 3124690080, 'Femenino', 1);
+INSERT INTO tbUsuarios VALUES (45220076, 'Paula', 'Sanchez', 'paulinha@email.com', 3224569082, 'Femenino', 1);
+
+INSERT INTO tbTipoServicio VALUES (1,'Reserva');
+INSERT INTO tbTipoServicio VALUES (2,'Bar');
+INSERT INTO tbTipoServicio VALUES (3,'Pisina');
+INSERT INTO tbTipoServicio VALUES (4,'Restaurante');
+INSERT INTO tbTipoServicio VALUES (5,'Spa');
+
+INSERT INTO tbTipoProducto VALUES (1,'Almuerzo');
+INSERT INTO tbTipoProducto VALUES (2,'Cena');
+INSERT INTO tbTipoProducto VALUES (3,'Bebidas');
+INSERT INTO tbTipoProducto VALUES (4,'Regalos sorpresa');
+INSERT INTO tbTipoProducto VALUES (5,'Productos locales');
+
+INSERT INTO tbTipoHabitacion VALUES (1,'Sencilla');
+INSERT INTO tbTipoHabitacion VALUES (2,'Doble');
+INSERT INTO tbTipoHabitacion VALUES (3,'Matrimonial');
+
+INSERT INTO tbServicios VALUES (1,'servicio de habitacion, reserva tu habitacion de acuerdo a tus nesecidades puedes escoger entre cama doble sencilla y matrimonial','38.000',1);
+INSERT INTO tbServicios VALUES (2,'servicio de pisina, puedes utilizar el servicio de pisina durante una hora sin limitaciones de uso','10.000',3);
+INSERT INTO tbServicios VALUES (3,'Bar en el lobby, Un bar en el lobby es una forma fácil de brindar a los huéspedes un lugar para relajarse y socializar.','40.000',2);
+INSERT INTO tbServicios VALUES (4,'Bar en la piscina, Un bar en la piscina puede ser una forma divertida de brindar a los huéspedes bebidas refrescantes y aperitivos mientras disfrutan del sol y la piscina.','30.000',2);
+INSERT INTO tbServicios VALUES (5,'El hotel puede ofrecer un servicio de bar en la habitación para aquellos huéspedes que prefieren disfrutar de una bebida en la privacidad de su habitación. ','30.000',2);
+INSERT INTO tbServicios VALUES (6,'Bar en el restaurante, El hotel puede tener un bar en el restaurante para que los huéspedes puedan disfrutar de bebidas mientras comen. ','30.000',2);
+INSERT INTO tbServicios VALUES (7,'masajes, Los masajes son una forma popular de relajación y pueden incluir diferentes técnicas como masajes relajantes, terapéuticos, con piedras calientes, entre otros.','20.000',5);
+INSERT INTO tbServicios VALUES (8,'Tratamientos faciales,  Los tratamientos faciales pueden incluir limpiezas, hidratación, exfoliación y otros servicios para el cuidado de la piel.','20.000',5);
+INSERT INTO tbServicios VALUES (9,'Tratamientos corporales,  Los tratamientos corporales pueden incluir envolturas corporales, exfoliaciones, hidratación y otros servicios para cuidar la piel del cuerpo.','25.000',5);
+INSERT INTO tbServicios VALUES (10,'Baños termales y saunas, os baños termales y saunas son una excelente forma de relajación y bienestar para los huéspedes','25.000',5);
+INSERT INTO tbServicios VALUES (11,'Clases de yoga y meditación, Las clases de yoga y meditación son una forma de relajación y bienestar mental y pueden ser muy populares entre los huéspedes.','20.000',5);
+INSERT INTO tbServicios VALUES (12,'Desayuno buffet, El hotel puede ofrecer un desayuno buffet para los huéspedes, con una amplia variedad de opciones como huevos, tocino, frutas, cereales, panes, jugos, café y té.','15.000',4);
+INSERT INTO tbServicios VALUES (13,'Restaurante a la carta, El hotel puede tener un restaurante a la carta que ofrezca platos de alta calidad y una amplia variedad de opciones de cocina internacional y local.','40.000',4);
+INSERT INTO tbServicios VALUES (14,'Servicio de habitaciones, El hotel puede ofrecer un servicio de habitaciones que permita a los huéspedes disfrutar de la comida en la privacidad de su habitación','30.000',4);
+INSERT INTO tbServicios VALUES (15,'Menú especial para niños, El hotel puede ofrecer un menú especial para niños con opciones de alimentos y bebidas que sean atractivas y saludables para ellos.','25.000',4);
+
+INSERT INTO tbHabitaciones VALUES (1,'Disponible','habitacion con cama doble con ventana a la pisina','35.000',2);
+INSERT INTO tbHabitaciones VALUES (2,'Disponible','habitacion matrimonial con estilo elegante y relajante ','45.000',3);
+INSERT INTO tbHabitaciones VALUES (3,'Disponible','habitacion con cama doble con ventana a la pisina','35.000',2);
+INSERT INTO tbHabitaciones VALUES (4,'Disponible','habitacion de cama sencilla y un espacio acojedor ','30.000',1);
+INSERT INTO tbHabitaciones VALUES (5,'Ocupado','habitacion de cama sencilla y un espacio acojedor ','30.000',1);
+
+INSERT INTO tbReserva VALUES(1,'2','25-03-2023','31-03-2023',1,98765432);
+INSERT INTO tbReserva VALUES(2,'1','1-03-2023','8-03-2023',5,25894702);
+INSERT INTO tbReserva VALUES(3,'2','7-03-2023','21-03-2023',1,45678912);
+INSERT INTO tbReserva VALUES(4,'3','9-03-2023','15-03-2023',2,78912345);
+INSERT INTO tbReserva VALUES(5,'1','1-03-2023','2-03-2023',4,22790521);
+INSERT INTO tbReserva VALUES(6,'3','3-022023','8-02-2023',2,12660937);
+INSERT INTO tbReserva VALUES(7,'3','9-02-2023','20-02-2023',2,45220076);
+
+INSERT INTO tbProductos VALUES (1,'Cervaza botella','3.000',3);
+INSERT INTO tbProductos VALUES (2,'Cocteles','20.000',3);
+INSERT INTO tbProductos VALUES (3,'Vino por copa','25.000',3);
+INSERT INTO tbProductos VALUES (4,'Licor por copa ','20.000',3);
+INSERT INTO tbProductos VALUES (5,'Refrescos','6.000',3);
+INSERT INTO tbProductos VALUES (6,'Jugos','4.000',3);
+INSERT INTO tbProductos VALUES (7,'Agua','2.000',3);
+INSERT INTO tbProductos VALUES (8,'Mochilas','40.000',4);
+INSERT INTO tbProductos VALUES (9,'Muñecas','10.000',4);
+INSERT INTO tbProductos VALUES (10,'Joyeria artezanal','40.000',4);
+INSERT INTO tbProductos VALUES (11,'Joyeria','90.000',5);
+INSERT INTO tbProductos VALUES (12,'Bandeja paisa','20.000',1);
+INSERT INTO tbProductos VALUES (13,'Churrasco','15.000',1);
+INSERT INTO tbProductos VALUES (14,'Arepas','5.000',2);
+INSERT INTO tbProductos VALUES (15,'Empanadas','10.000',2);
+INSERT INTO tbProductos VALUES (16,'Jarepas','5.000',2);
+INSERT INTO tbProductos VALUES (17,'Ajiaco','15.000',1);
+INSERT INTO tbProductos VALUES (18,'Mondongo','15.000',1);
+INSERT INTO tbProductos VALUES (19,'Sudado de pollo','15.000',1);
+INSERT INTO tbProductos VALUES (20,'Arroz con pollo','15.000',1);
+INSERT INTO tbProductos VALUES (21,'Caldo de costilla','15.000',1);
+INSERT INTO tbProductos VALUES (22,'Patacones','15.000',1);
+INSERT INTO tbProductos VALUES (23,'Lechona','40.000',2);
+INSERT INTO tbProductos VALUES (24,'Tamales','15.000',1);
+INSERT INTO tbProductos VALUES (25,'Arroz con camarones','20.000',2);
+INSERT INTO tbProductos VALUES (26,'Ensalada con aguacate y tomate','20.000',2);
+
+INSERT INTO tbCostoTotal VALUES (1,1,3,2);
+INSERT INTO tbCostoTotal VALUES (2,2,12,2);
+INSERT INTO tbCostoTotal VALUES (3,14,1,1);
+INSERT INTO tbCostoTotal VALUES (4,10,19,4);
+INSERT INTO tbCostoTotal VALUES (5,9,4,5);
+INSERT INTO tbCostoTotal VALUES (6,12,17,2);
+INSERT INTO tbCostoTotal VALUES (7,10,18,1);
+
+INSERT INTO tbHospedaje VALUES (1,4,1);
+INSERT INTO tbHospedaje VALUES (2,6,2);
+INSERT INTO tbHospedaje VALUES (3,1,3);
+INSERT INTO tbHospedaje VALUES (4,5,4);
+INSERT INTO tbHospedaje VALUES (5,2,5);
+INSERT INTO tbHospedaje VALUES (6,7,6);
+INSERT INTO tbHospedaje VALUES (7,3,7);</sql><sql name="Sentencias">/*Inner Join*/
+SELECT * FROM tbProductos INNER JOIN tbTipoProducto ON tbProductos.tipoProID = tbTipoProducto.tipoProID;
+
+/*Inner Join con Alias*/
+SELECT * FROM tbProductos AS TP INNER JOIN tbTipoProducto AS TTP ON TP.tipoProID = TTP.tipoProID;
+
+/*Where*/
+SELECT * FROM tbProductos AS TP WHERE tipoProID = 1;
+
+/*Combinación Interna – INNER JOIN*/
+SELECT usuNombre, usuApellido, resID FROM tbUsuarios INNER JOIN tbReserva ON tbUsuarios.usuDocumento = tbReserva.usuDocumento;
+
+/*Combinaciones Externas – OUTER JOIN*/
+SELECT * FROM tbUsuarios LEFT JOIN tbReserva ON tbUsuarios.usuDocumento = tbReserva.usuDocumento;
+
+/*Autocombinaciones – SELF JOIN*/
+SELECT * FROM tbServicios AS S1 INNER JOIN tbServicios AS S2 ON S1.servID = S2.servCosto;
+
+/*Combinaciones de dos o más tablas*/
+SELECT usuNombre, habCaracteristicas, resCantPersonas FROM tbUsuarios INNER JOIN tbReserva ON tbUsuarios.usuDocumento = tbReserva.usuDocumento
+INNER JOIN tbHabitaciones ON tbHabitaciones.habID = tbReserva.habID;
+
+/*Consultas de Resumen - Sum*/
+SELECT proNombre, sum(proCosto) FROM tbProductos;
+
+/*Consultas de Resumen - Min*/
+SELECT habCaracteristicas, min(habCosto) FROM tbHabitaciones;
+
+/*Consultas de Resumen - Max*/
+SELECT habCaracteristicas, max(habCosto) FROM tbHabitaciones;
+
+/*Consultas de Resumen - Avg*/
+SELECT avg(proCosto) FROM tbProductos;
+
+/*Consultas de Resumen - Count*/
+SELECT COUNT (usuEmail) FROM tbUsuarios;
+
+/*Consultas de Resumen - (*)*/
+SELECT COUNT(*) FROM tbReserva;
+
+/*La cláusula GROUP BY*/
+SELECT * FROM tbUsuarios GROUP BY usuNombre;
+
+/*La cláusula HAVING*/
+SELECT proNombre, proCosto FROM tbProductos GROUP BY proID HAVING proCosto &lt;= 10;
+
+/*Subconsultas - En la lista de selección*/
+SELECT habCaracteristicas, habEstado, habCosto, (SELECT avg(habCosto) FROM tbHabitaciones)
+FROM tbHabitaciones WHERE habEstado = 'Disponible';
+
+/*CÓDIGOS DEL JAMES*/
+
+/*Select * from tbServicios order by tipoSerID*/
+/*Select * from tbProductos order by tipoProID*/
+
+/*Select * from tbServicios where servCosto &gt; 30;*/
+/*Select * from tbProductos where proCosto &gt; 30;*/
+
+/*Select count(resCantPersonas) from tbReserva where resCantPersonas &gt; 2;*/
+/*Select count(habCosto) from tbHabitaciones where habCosto &gt;30*/
+
+/*Select proNombre, min(proCosto) from tbProductos;*/
+/*Select servDescripcion, min(servCosto) from tbServicios;*/
+
+/*Select avg(servCosto) from tbServicios where servCosto&gt;20*/
+/*Select avg(habCosto) from tbHabitaciones where habCosto&gt;20*/
+
+/*Select avg(servCosto) from tbServicios where tipoSerID=2;*/
+/*Select avg(proCosto) from tbProductos where tipoProID=1;*/
+
+/*Select * from tbProductos order by proCosto;*/
+/*Select * from tbServicios order by servCosto;*/
+
+/*Select proNombre from tbProductos where proCosto in(Select min(proCosto) from tbProductos);*/
+/*Select servDescripcion from tbServicios where servCosto in(Select min(servCosto) from tbServicios);*/
+
+/*Select * from tbHabitaciones where habCosto &gt; 30 and habCosto &lt; 40;*/
+/*Select * from tbServicios where servCosto &gt; 30 and servCosto &lt; 40;*/
+</sql><current_tab id="1"/></tab_sql></sqlb_project>
