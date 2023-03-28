@@ -24,6 +24,7 @@ header {
     height: 80px;
 }
 
+
 /*.home {
     background-color: #395144;
 }*/
@@ -95,63 +96,96 @@ a:hover {
     display: none;
 }
 
-.buscador {
-    margin-top: 30px;
-    text-align: center;
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.buscador p {
-    font-family: 'Titan One', cursive;
-    font-size: 40px;
+.anonimos {
+    width: 1100px;
+    height: 500px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenedor_parrafo {
+    padding: 20px;
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    align-items: center;
+}
+
+.kali {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.contenedor_parrafo {
+    overflow: hidden;
+}
+
+.parrafo {
+    font-size: 25px;
+    font-style: italic;
     color: white;
 }
 
-.buscadore {
-    margin-top: 20px;
-    border-radius: 30px;
-    width: 600px;
-    height: 50px;
-    font-size: 20px;
+aside {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.cont{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 30px;
+aside img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+aside p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.mapa {
+    border-radius: 10%;
 }
 
 .logos {
-    width: 33.3%;
-    background-color: #FFCD00;
-}
-
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
 .logos img {
-    padding: 20px;
-    margin: 0 25% 0 25%;
-    width: 50%;
-    object-fit: cover;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
 }
-
-.logos2 {
-    width: 33.3%;
-    background-color: #003087;
+  
+footer {
+    text-align: center;
+    color: white;
 }
-
-.logos2 img {
-    padding: 20px;
-    margin: 0 25% 0 25%;
-    width: 50%;
-    object-fit: cover;
-}
-
-.logos3 {
-    width: 33.3%;
-    background-color: #C8102E;
-}
-
-.logos3 img {
-    padding: 20px;
-    margin: 0 25% 0 25%;
-    width: 50%;
-    object-fit: cover;
+  
+footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
 }

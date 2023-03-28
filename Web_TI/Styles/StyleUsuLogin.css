@@ -1,0 +1,257 @@
+:root {
+    --skyblue: #12d2db;
+    --white: #fcf2fa;
+    --purple: #5c2a91aa;
+    --green-blc: #062321dd;
+    --green: #5cc229;
+    --colorsena: #39a900;
+    --shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
+    --navColor: linear-gradient(to right, rgba(19, 148, 83, 0.6)5%, rgba(6, 35, 23, 0.9));
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: lightgrey;
+    /*background-size: cover;
+    background-attachment: fixed;*/
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+}
+    
+.formulario {
+    background: #fff;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--green-blc);
+    font-size: 40px;
+}
+
+input[type="text"],input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+
+.input-contenedor {
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+}
+
+.icon {
+    min-width: 50px;
+    text-align: center;
+    color: #999;
+}
+
+.button {
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: var(--colorsena);
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: var(--green);
+}
+
+.button a{
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+.contenedor p a {
+    background: none;
+}
+
+.contenedor .button a {
+    background: none;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--green-blc);
+    font-weight: 600;
+}
+
+/*.link:hover {
+    color: cadetblue;
+}*/
+
+@media(min-width:768px) {
+
+.formulario {
+    margin: auto;
+    width: 500px;
+    margin-top: 150px;
+    border-radius: 2%;
+    }
+
+}
+
+/*-------------------------------------------*/
+
+nav {
+    background: var(--navColor);
+    box-shadow: var(--shadow);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: var(--white);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 80px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    font-style: italic;
+    transition: .2s ease;
+    text-shadow: 3px 5px 20px #230622aa;
+}
+
+nav ul {
+    float: right;
+    margin-right: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 13px;
+}
+
+a:hover {
+    background: var(--purple);
+    transition: .5s;
+}
+
+.checkbtn {
+    line-height: 80px;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+
+.checkbtn i {
+    color: var(--white);
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.checkbtn i:hover {
+    background: var(--purple);
+}
+
+#check {
+    display: none;
+}
+
+section {
+    height: 100vh;;
+    background-position: top;
+    background-size: cover;
+}
+
+
+/* responsove code */
+
+@media (max-width: 952px) {
+    /* table mode */
+    label.logo {
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 858px) {
+    /* mobile mode */
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--green-blc);
+        top: 80px;
+        left: -100%;
+        padding-top: 80px;
+        text-align: center;
+        transition: .5s ease;
+    }
+    nav ul li {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover {
+        background: none;
+        color: var(--skyblue);
+        text-shadow: 0 10px 15px var(--blue);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+.logos {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.logos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+  
+footer {
+    text-align: center;
+    color: white;
+}
+  
+footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+}

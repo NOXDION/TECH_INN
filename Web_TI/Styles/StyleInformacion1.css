@@ -1,0 +1,147 @@
+:root {
+    --blue: #12d2db;
+    --white: #fcf2fa;
+    --green: #5c2a91aa;
+    --green-blc: #062321dd;
+    --shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
+    --navColor: linear-gradient(to right, rgba(19, 148, 83, 0.6)5%, rgba(6, 35, 23, 0.9));
+    /*--navColor : linear-gradient(to right, rgba(178, 47, 147, .6)5%, rgba(35, 6, 34, .9));*/
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #395144;
+}
+
+header {
+    height: 80px;
+}
+
+
+/*.home {
+    background-color: #395144;
+}*/
+
+nav {
+    position: absolute;
+    background: var(--navColor);
+    box-shadow: var(--shadow);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: var(--white);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 80px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    font-style: italic;
+    transition: .2s ease;
+    text-shadow: 3px 5px 20px #230622aa;
+}
+
+nav ul {
+    float: right;
+    margin-right: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 13px;
+    /*text-transform: lowercase;*/
+}
+
+a:hover {
+    background: var(--green);
+    transition: .5s;
+}
+
+.checkbtn {
+    line-height: 80px;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+
+.checkbtn i {
+    color: var(--white);
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.checkbtn i:hover {
+    background: var(--green);
+}
+
+#check {
+    display: none;
+}
+
+body header .titulo {
+    padding: 1%;
+    font-size: medium;
+    font-family: cursive;
+    background-color: #d8fac3;
+}
+
+body header .titulo2 {
+    padding: 1%;
+    font-size: medium;
+    font-family: cursive;
+    background-color: #d8fac3;
+}
+
+body header .titulo3 {
+    padding: 1%;
+    font-size: medium;
+    font-family: cursive;
+    background-color: #d8fac3;
+}
+
+body header .titulo4 {
+    padding: 1%;
+    font-size: medium;
+    font-family: cursive;
+    background-color: #d8fac3;
+}
+
+body header .enun {
+    width: 100%;
+    padding: 40px;
+    margin-left: 2px;
+}
+
+body header .cab_izq {
+    width: 9%;
+    padding: 0%;
+    height: 800px;
+    float: left;
+    background-color: #ffffff;
+}
+
+body header .cab_der {
+    width: 9%;
+    padding: 0%;
+    height: 800px;
+    float: right;
+    background-color: #ffffff;
+}

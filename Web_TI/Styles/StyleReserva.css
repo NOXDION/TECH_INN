@@ -1,11 +1,12 @@
 :root {
-    --blue: #12d2db;
+    --skyblue: #12d2db;
     --white: #fcf2fa;
-    --green: #5c2a91aa;
+    --purple: #5c2a91aa;
     --green-blc: #062321dd;
+    --green: #5cc229;
+    --colorsena: #39a900;
     --shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
     --navColor: linear-gradient(to right, rgba(19, 148, 83, 0.6)5%, rgba(6, 35, 23, 0.9));
-    /*--navColor : linear-gradient(to right, rgba(178, 47, 147, .6)5%, rgba(35, 6, 34, .9));*/
 }
 
 * {
@@ -16,20 +17,12 @@
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #2D2727;
+    font-family: 'Poppins', sans-serif;
+    background-color: #2d2727;
 }
-
-header {
-    height: 80px;
-}
-
-/*.home {
-    background-color: #395144;
-}*/
 
 nav {
-    position: absolute;
+    /*position: absolute;*/
     background: var(--navColor);
     box-shadow: var(--shadow);
     height: 80px;
@@ -66,8 +59,11 @@ nav ul li a {
     /*text-transform: lowercase;*/
 }
 
+
+/*a.active,*/
+
 a:hover {
-    background: var(--green);
+    background: var(--purple);
     transition: .5s;
 }
 
@@ -88,11 +84,60 @@ a:hover {
 }
 
 .checkbtn i:hover {
-    background: var(--green);
+    background: var(--purple);
 }
 
 #check {
     display: none;
+}
+
+
+/* responsove code */
+
+@media (max-width: 952px) {
+    /* table mode */
+    label.logo {
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 858px) {
+    /* mobile mode */
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--green-blc);
+        top: 80px;
+        left: -100%;
+        padding-top: 80px;
+        text-align: center;
+        transition: .5s ease;
+    }
+    nav ul li {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    /*a.active,*/
+    a:hover {
+        background: none;
+        color: var(--skyblue);
+        text-shadow: 0 10px 15px var(--blue);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
 }
 
 section div h2 {
@@ -245,4 +290,28 @@ cursor: crosshair;
 width: 300px;
 opacity: 1;
 filter: contrast(120%);
+}
+
+.logos {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.logos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+  
+footer {
+    text-align: center;
+    color: white;
+}
+  
+footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
 }
