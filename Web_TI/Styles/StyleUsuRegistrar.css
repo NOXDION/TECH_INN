@@ -110,7 +110,7 @@ p {
 
 }
 
-/*-------------------------------------------*/
+/*------------------Nav------------------*/
 
 nav {
     background: var(--navColor);
@@ -177,13 +177,6 @@ a:hover {
     display: none;
 }
 
-section {
-    height: 100vh;;
-    background-position: top;
-    background-size: cover;
-}
-
-
 /* responsove code */
 
 @media (max-width: 952px) {
@@ -230,6 +223,14 @@ section {
     #check:checked~ul {
         left: 0;
     }
+}
+
+/*---------------------------------------------------*/
+
+section {
+    height: 100vh;;
+    background-position: top;
+    background-size: cover;
 }
 
 .logos {

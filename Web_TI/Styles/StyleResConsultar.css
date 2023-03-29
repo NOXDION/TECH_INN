@@ -1,3 +1,14 @@
+:root {
+    --skyblue: #12d2db;
+    --white: #fcf2fa;
+    --purple: #5c2a91aa;
+    --green-blc: #062321dd;
+    --green: #5cc229;
+    --colorsena: #39a900;
+    --shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
+    --navColor: linear-gradient(to right, rgba(19, 148, 83, 0.6)5%, rgba(6, 35, 23, 0.9));
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,9 +19,127 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url(../Images/bosque_en_la_nieve.jpg);
-    background-size: 150%;
+    background-size: 180%;
     animation: movimiento 20s infinite linear alternate;
 }
+
+/*------------------Nav------------------*/
+
+nav {
+    position: relative;
+    background: var(--navColor);
+    box-shadow: var(--shadow);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: var(--white);
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 80px;
+    letter-spacing: -1px;
+    font-weight: 800;
+    font-style: italic;
+    transition: .2s ease;
+    text-shadow: 3px 5px 20px #230622aa;
+}
+
+nav ul {
+    float: right;
+    margin-right: 80px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+}
+
+nav ul li a {
+    color: var(--white);
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 13px;
+}
+
+a:hover {
+    background: var(--purple);
+    transition: .5s;
+}
+
+.checkbtn {
+    line-height: 80px;
+    font-size: 30px;
+    float: right;
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+
+.checkbtn i {
+    color: var(--white);
+    padding: 5px;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+
+.checkbtn i:hover {
+    background: var(--purple);
+}
+
+#check {
+    display: none;
+}
+
+/* responsove code */
+
+@media (max-width: 952px) {
+    /* table mode */
+    label.logo {
+        font-size: 25px;
+        padding-left: 50px;
+    }
+    nav ul li a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 858px) {
+    /* mobile mode */
+    .checkbtn {
+        display: block;
+    }
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--green-blc);
+        top: 80px;
+        left: -100%;
+        padding-top: 80px;
+        text-align: center;
+        transition: .5s ease;
+    }
+    nav ul li {
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover {
+        background: none;
+        color: var(--skyblue);
+        text-shadow: 0 10px 15px var(--blue);
+    }
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/*---------------------------------------------------*/
 
 header {
     margin-top: 30px;

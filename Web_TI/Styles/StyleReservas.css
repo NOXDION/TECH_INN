@@ -21,8 +21,9 @@ body {
     background-color: #2d2727;
 }
 
+/*------------------Nav------------------*/
+
 nav {
-    /*position: absolute;*/
     background: var(--navColor);
     box-shadow: var(--shadow);
     height: 80px;
@@ -56,11 +57,7 @@ nav ul li a {
     font-size: 20px;
     padding: 7px 13px;
     border-radius: 13px;
-    /*text-transform: lowercase;*/
 }
-
-
-/*a.active,*/
 
 a:hover {
     background: var(--purple);
@@ -90,7 +87,6 @@ a:hover {
 #check {
     display: none;
 }
-
 
 /* responsove code */
 
@@ -129,7 +125,7 @@ a:hover {
     nav ul li a {
         font-size: 20px;
     }
-    /*a.active,*/
+
     a:hover {
         background: none;
         color: var(--skyblue);
@@ -139,6 +135,8 @@ a:hover {
         left: 0;
     }
 }
+
+/*---------------------------------------------------*/
 
 section div h2 {
     color: white;

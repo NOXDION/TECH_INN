@@ -7,7 +7,7 @@
     --colorsena: #39a900;
     --shadow: 0 5px 10px 5px rgba(0, 0, 0, .3);
     --navColor: linear-gradient(to right, rgba(19, 148, 83, 0.6)5%, rgba(6, 35, 23, 0.9));
-    /*--navColor : linear-gradient(to right, rgb(57, 169, 0)5%, rgb(15, 46, 0)); este es color sena*/
+    /*--navColor : linear-gradient(to right, rgb(57, 169, 0)5%, rgb(15, 46, 0)); color sena*/
     /*--navColor : linear-gradient(to right, rgba(47, 178, 112, 0.6)5%, rgba(6, 35, 23, 0.9));*/
     /*--navColor : linear-gradient(to right, rgba(178, 47, 147, .6)5%, rgba(35, 6, 34, .9));*/
 }
@@ -23,6 +23,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: lightgray;
 }
+
+/*------------------Nav------------------*/
 
 nav {
     /*position: absolute;*/
@@ -94,13 +96,14 @@ a:hover {
     display: none;
 }
 
+/*-------------section-----------------
 section {
     height: 100vh;
     background: url('../Images/bosque_en_la_nieve.jpg') no-repeat;
     background-position: top;
     background-size: cover;
 }
-
+---------------------------------------*/
 
 /* responsove code */
 
@@ -150,6 +153,8 @@ section {
     }
 }
 
+/*---------------------------------------------------*/
+
 .mi-input {
     display: flex;
     justify-content: center;
@@ -163,73 +168,89 @@ section {
     background-color: #fff;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     width: 300px;
-  }
+}
   
-  .mi-input:focus {
+.mi-input:focus {
     border-color: #001eff;
     box-shadow: 0 0 5px rgba(60, 0, 255, 0.5);
     outline: none;
-    }
+}
   
-  section{
+section {
     display: flex;
     width: 100%;
     height: 100px;
     position: relative;
     z-index: 10;
-  }
+}
   
-  .titulo{
+.titulo {
   box-shadow: var(--shadow);
   font-family: cursive;
   text-shadow: 3px 5px 20px #000000aa;
   background-color: #ffffff;
   padding: 1%;
   display:flow-root;
-  }
+}
   
-  .esp{
+.esp {
   width: 16%;
   height: 1100px;
   float: left;
-  }
-  .esp1{
+}
+
+.esp1 {
   width: 16%;
   height: 1100px;
   float: right;
-  }
+}
   
-  .esp2{
+.esp2 {
     width: 100%;
     float: right;
-  }
+}
   
-  header .titulo img{
+header .titulo img {
     width: 130px;
     transition: .6s ease;
     border-radius: 20px 20px;
     float: left;
-  }
+}
       
-  header .titulo img:hover{
+header .titulo img:hover {
     cursor:unset;
     width: 20%;
     filter: contrast(130%);
     margin-right: 20px;
-  }
+}
   
-  .contenedor{
+.contenedor {
     width: 100%;
     height: 200px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    }
+}
   
-  footer {
+.logos {
+    margin-top: 20px;
     display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: #b2b2b2 ;
-    color: #333;
-    padding: 30px;
-  }
+}
+
+.logos img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
