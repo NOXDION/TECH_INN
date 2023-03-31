@@ -18,7 +18,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: lightgrey;
+    background-color: dimgrey;
     /*background-size: cover;
     background-attachment: fixed;*/
 }
@@ -228,9 +228,14 @@ a:hover {
 /*---------------------------------------------------*/
 
 section {
-    height: 100vh;;
+    /*height: 100vh;*/
     background-position: top;
     background-size: cover;
+}
+
+
+.clearfix{
+    clear: both;
 }
 
 .logos {

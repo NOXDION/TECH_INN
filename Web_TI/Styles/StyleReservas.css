@@ -18,7 +18,8 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #2d2727;
+    /*background-color: #2d2727;*/
+    background-color: dimgrey;
 }
 
 /*------------------Nav------------------*/
@@ -137,6 +138,7 @@ a:hover {
 }
 
 /*---------------------------------------------------*/
+
 
 section div h2 {
     color: white;
