@@ -1,9 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\RolController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\ClienteController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,14 +13,6 @@ use App\Http\Controllers\ClienteController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('welcome');
 });
-
-Route::resource('rol', RolController::class);
-Route::resource('user', UserController::class);
-Route::resource('cliente', ClienteController::class);
