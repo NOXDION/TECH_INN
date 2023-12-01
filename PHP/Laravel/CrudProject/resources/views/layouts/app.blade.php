@@ -12,7 +12,7 @@
         <li class="nav-item"><a href="/" class="nav-link active" aria-current="page">Home</a></li>
         <li class="nav-item"><a href="/rol" class="nav-link">Roles</a></li>
         <li class="nav-item"><a href="/user" class="nav-link">Usuarios</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Empleados</a></li>
+        <li class="nav-item"><a href="/empleado" class="nav-link">Empleados</a></li>
         <li class="nav-item"><a href="/cliente" class="nav-link">Clientes</a></li>
       </ul>
     </header>

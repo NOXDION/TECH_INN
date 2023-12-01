@@ -3,7 +3,7 @@
 @section('content')
 <div class="row text-center">
     <div>
-        <h2>Crear Rol</h2>
+        <h2>Crear Usuario</h2>
         <a href="{{route('user.create')}}" class="btn btn-primary">Crear</a>
     </div>
 </div>

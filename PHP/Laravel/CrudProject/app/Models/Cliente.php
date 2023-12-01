@@ -14,7 +14,7 @@ class Cliente extends Model
     protected $primaryKey ='cliId';
 
     protected $fillable = [
-        'rolId',
+        'useId',
         'cliFechaRegistro',
     ];
 }

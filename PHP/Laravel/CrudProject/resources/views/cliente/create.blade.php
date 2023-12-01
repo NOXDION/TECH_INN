@@ -6,12 +6,12 @@
   <form action="{{ route('cliente.store') }}" method="POST" novalidate>
     @csrf
     <div class="mb-3">
-      <label for="">Rol del Susodicho:</label>
-      <input id="" type="number" name="rolId" class="form-control">
+      <label for="">Id del usuario:</label>
+      <input id="" type="number" name="useId" class="form-control">
     </div>
 
     <div class="mb-3">
-      <label for="" class="form-label">Fecha de registro del Susodicho:</label>
+      <label for="" class="form-label">Fecha de registro del cliente:</label>
       <input id="" type="date" name="cliFechaRegistro" class="form-control">
     </div>
 

@@ -22,7 +22,7 @@
     <table class="table table-bordered">
         <tr>
             <th>Id cliente</th>
-            <th>Id rol</th>
+            <th>Id usuario</th>
             <th>Fecha Registro</th>
             <th></th>
         </tr>
@@ -31,7 +31,7 @@
 
         <tr>
             <td>{{$cli->cliId}}</td>
-            <td>{{$cli->rolId}}</td>
+            <td>{{$cli->useId}}</td>
             <td>{{$cli->cliFechaRegistro}}</td>
             <td>
                 <a href="{{route('cliente.show', $cli->cliId)}}" class="btn btn-info">Detalles</a>

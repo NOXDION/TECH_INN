@@ -7,12 +7,12 @@
     @csrf
     @method('PUT')
     <div class="mb-3">
-      <label for="">Rol del Susodicho:</label>
-      <input id="" type="number" name="rolId" class="form-control" placeholder="DIgite su role" value="{{$cliente->rolId}}">     
+      <label for="">Id del cliente:</label>
+      <input id="" type="number" name="useId" class="form-control" placeholder="DIgite su role" value="{{$cliente->useId}}">
     </div>
 
     <div class="mb-3">
-      <label for="" class="form-label">Fecha de registro del Susodicho:</label>
+      <label for="" class="form-label">Fecha de registro del cliente:</label>
       <input id="" type="date" name="cliFechaRegistro" class="form-control" placeholder="DIgite su role" value="{{$cliente->cliFechaRegistro}}">
     </div>
 

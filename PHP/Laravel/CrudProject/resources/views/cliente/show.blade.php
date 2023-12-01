@@ -10,8 +10,10 @@
 </div>
 
 <div class="m-5">
-    <h3 style="color:blue">Id rol: </h3>
-        <h5>{{$cliente->rolId}}</h5>
+    <h3 style="color:blue">Id cliente: </h3>
+        <h5>{{$cliente->cliId}}</h5>
+    <h3 style="color:blue">Id usuario: </h3>
+        <h5>{{$cliente->useId}}</h5>
     <h3 style="color:blue">Fecha de registro: </h3>
         <h5>{{$cliente->cliFechaRegistro}}</h5>
     <h3 style="color:blue">Fecha de creacion: </h3>

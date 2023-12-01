@@ -13,10 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tbClientes', function (Blueprint $table) {
-            $table->id('cliId');
+        Schema::create('tbEmpleados', function (Blueprint $table) {
+            $table->id('empId');
             $table->unsignedBigInteger('useId');
-            $table->date('cliFechaRegistro');
+            $table->string('empDireccion');
+            $table->string('empTrabajo');
+            $table->decimal('empSalarioBasico',20, 4);
+            $table->date('empFechaAdmision');
             $table->timestamps();
             $table->foreign('useId')->references('useId')->on('users');
         });
@@ -29,6 +32,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbClientes');
+        Schema::dropIfExists('tbEmpleados');
     }
 };
