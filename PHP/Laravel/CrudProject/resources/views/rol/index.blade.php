@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+
 <div class="row text-center">
     <div>
         <h2>Crear Rol</h2>

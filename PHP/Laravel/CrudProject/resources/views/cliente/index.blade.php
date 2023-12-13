@@ -4,7 +4,8 @@
 
 <div class="row text-center">
     <div>
-        <a href="{{route('cliente.create')}}" class="btn btn-primary">Crear cliente</a>
+        <h2>Crear Cliente</h2>
+        <a href="{{route('cliente.create')}}" class="btn btn-primary">Crear</a>
     </div>
 </div>
 

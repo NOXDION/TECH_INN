@@ -22,7 +22,7 @@ use App\Http\Controllers\ClienteController;
 // });
 
 Route::get('/', function () {
-    return view('layouts.app');
+    return view('layouts.invitados');
 });
 
 Route::resource('rol', RolController::class);
